@@ -2,7 +2,7 @@
 robotframework>=6.1.0
 robotframework-requests>=0.9.4
 robotframework-faker>=6.0.0
-robotframework-allure>=2.13.2
+allure-robotframework>=2.13.2
 
 # HTTP Client
 requests>=2.31.0
