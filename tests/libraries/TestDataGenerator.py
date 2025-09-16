@@ -18,6 +18,7 @@ class TestDataGenerator:
     @keyword('Generate Random User Data')
     def generate_random_user_data(self):
         """Generate random user data for testing"""
+         
         user_data = {
             'name': self.fake.name(),
             'email': self.fake.email(),
@@ -25,7 +26,7 @@ class TestDataGenerator:
             'address': self.fake.address(),
             'company': self.fake.company(),
             'job_title': self.fake.job(),
-            'date_of_birth': datetime.strptime(self.fake.date_of_birth(minimum_age=18, maximum_age=80),""%Y-%m-%d %H:%M:%S"").isoformat(),
+            'date_of_birth': datetime.strptime(self.fake.date_of_birth(minimum_age=18, maximum_age=80),"%Y-%m-%d %H:%M:%S").isoformat(),
             'username': self.fake.user_name(),
             'password': self.fake.password(length=12),
             'ssn': self.fake.ssn(),
