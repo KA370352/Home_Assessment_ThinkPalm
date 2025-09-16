@@ -26,7 +26,7 @@ class TestDataGenerator:
             'address': self.fake.address(),
             'company': self.fake.company(),
             'job_title': self.fake.job(),
-            'date_of_birth': datetime.strptime(str(self.fake.date_of_birth(minimum_age=18, maximum_age=80)),"%Y-%m-%d %H:%M:%S").isoformat(),
+            'date_of_birth': datetime.strptime(str(self.fake.date_of_birth(minimum_age=18, maximum_age=80)),"%Y-%m-%d").isoformat(),
             'username': self.fake.user_name(),
             'password': self.fake.password(length=12),
             'ssn': self.fake.ssn(),
