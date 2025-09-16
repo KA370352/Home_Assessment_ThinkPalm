@@ -2,7 +2,6 @@ import json
 import pika
 from robot.api.deco import keyword
 from robot.api import logger
-import RabbitMQ
 
 class RabbitMQProducerLibrary:
     """RabbitMQ producer library for Robot Framework messaging integration"""
