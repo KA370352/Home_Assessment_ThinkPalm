@@ -44,7 +44,7 @@ class TestDataGenerator:
             'number_field': self.fake.random_int(min=1, max=1000),
             'float_field': round(self.fake.random.uniform(1.0, 100.0), 2),
             'boolean_field': self.fake.boolean(),
-            'date_field': datetime.strptime(self.fake.date, "%Y-%m-%d").isoformat(),
+            'date_field': datetime.strptime(self.fake.date(), "%Y-%m-%d").isoformat(),
             'datetime_field': datetime.strptime(self.fake.date_time(), "%Y-%m-%d %H:%M:%S").isoformat(),
             'url_field': self.fake.url(),
             'ipv4_field': self.fake.ipv4(),
