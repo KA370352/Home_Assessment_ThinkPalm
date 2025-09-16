@@ -26,7 +26,7 @@ class TestDataGenerator:
             'address': self.fake.address(),
             'company': self.fake.company(),
             'job_title': self.fake.job(),
-            'date_of_birth': datetime.strptime(self.fake.date_of_birth(minimum_age=18, maximum_age=80),"%Y-%m-%d %H:%M:%S").isoformat(),
+            'date_of_birth': datetime.strptime(str(self.fake.date_of_birth(minimum_age=18, maximum_age=80)),"%Y-%m-%d %H:%M:%S").isoformat(),
             'username': self.fake.user_name(),
             'password': self.fake.password(length=12),
             'ssn': self.fake.ssn(),
@@ -44,8 +44,8 @@ class TestDataGenerator:
             'number_field': self.fake.random_int(min=1, max=1000),
             'float_field': round(self.fake.random.uniform(1.0, 100.0), 2),
             'boolean_field': self.fake.boolean(),
-            'date_field': datetime.strptime(self.fake.date(), "%Y-%m-%d").isoformat(),
-            'datetime_field': datetime.strptime(self.fake.date_time(), "%Y-%m-%d %H:%M:%S").isoformat(),
+            'date_field': datetime.strptime(str(self.fake.date()), "%Y-%m-%d").isoformat(),
+            'datetime_field': datetime.strptime(str(self.fake.date_time()), "%Y-%m-%d %H:%M:%S").isoformat(),
             'url_field': self.fake.url(),
             'ipv4_field': self.fake.ipv4(),
             'mac_address_field': self.fake.mac_address(),
@@ -93,7 +93,7 @@ class TestDataGenerator:
                     }
                 },
                 'metadata': {
-                    'timestamp': datetime.strptime(datetime.now(), "%Y-%m-%d %H:%M:%S").isoformat(),
+                    'timestamp': datetime.strptime(str(datetime.now()), "%Y-%m-%d %H:%M:%S").isoformat(),
                     'version': f"{self.fake.random_int(1, 5)}.{self.fake.random_int(0, 9)}"
                 }
             }
