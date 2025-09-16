@@ -60,7 +60,7 @@ jobs:
         python-version: '3.11'
 
     - name: Install Java (for Allure)
-      uses: actions/setup-java@V4
+      uses: actions/setup-java@V3
       with:
         distribution: 'adopt'
         java-version: '11'
