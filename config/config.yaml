@@ -1,0 +1,31 @@
+api:
+  base_url: https://httpbin.org
+  retries: 3
+  retry_delay: 2
+  timeout: 30
+logging:
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  level: INFO
+messaging:
+  kafka:
+    bootstrap_servers:
+    - localhost:9092
+    topic: test-results
+  rabbitmq:
+    host: localhost
+    password: guest
+    port: 5672
+    queue: test-results
+    username: guest
+monitoring:
+  grafana:
+    password: admin
+    url: http://localhost:3000
+    username: admin
+  prometheus:
+    gateway_url: http://localhost:9091
+    job_name: robot-tests
+test_data:
+  generate_dynamic: true
+  locale: en_US
+  seed: 42

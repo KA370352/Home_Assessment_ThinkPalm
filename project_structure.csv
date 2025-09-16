@@ -1,0 +1,27 @@
+Path,Filename,Category,Directory,Size (bytes)
+.github\workflows\robot-tests.yml,robot-tests.yml,Configuration File,.github\workflows,3969
+config\config.yaml,config.yaml,Configuration File,config,635
+docker-compose.yml,docker-compose.yml,Configuration File,Root,4632
+grafana\provisioning\dashboards\dashboard.yml,dashboard.yml,Configuration File,grafana\provisioning\dashboards,259
+grafana\provisioning\datasources\prometheus.yml,prometheus.yml,Configuration File,grafana\provisioning\datasources,168
+prometheus\prometheus.yml,prometheus.yml,Configuration File,prometheus,658
+README.md,README.md,Documentation,Root,12789
+grafana\dashboards\robot-framework-dashboard.json,robot-framework-dashboard.json,JSON Configuration,grafana\dashboards,7477
+.env,.env,Other,Root,495
+tests\libraries\ConfigManager.py,ConfigManager.py,Python Library,tests\libraries,3652
+tests\libraries\KafkaProducerLibrary.py,KafkaProducerLibrary.py,Python Library,tests\libraries,2787
+tests\libraries\MetricsCollector.py,MetricsCollector.py,Python Library,tests\libraries,4926
+tests\libraries\RabbitMQProducerLibrary.py,RabbitMQProducerLibrary.py,Python Library,tests\libraries,4952
+tests\libraries\RetryDecorator.py,RetryDecorator.py,Python Library,tests\libraries,3092
+tests\libraries\TestDataGenerator.py,TestDataGenerator.py,Python Library,tests\libraries,5141
+tests\resources\common_keywords.resource,common_keywords.resource,Robot Framework Resource,tests\resources,4375
+docker\Dockerfile.robot,Dockerfile.robot,Robot Framework Test Suite,docker,1227
+tests\api\auth_status_tests.robot,auth_status_tests.robot,Robot Framework Test Suite,tests\api,7671
+tests\api\dynamic_data_tests.robot,dynamic_data_tests.robot,Robot Framework Test Suite,tests\api,7483
+tests\api\http_methods_tests.robot,http_methods_tests.robot,Robot Framework Test Suite,tests\api,7681
+tests\api\messaging_tests.robot,messaging_tests.robot,Robot Framework Test Suite,tests\api,8231
+tests\api\response_formats_tests.robot,response_formats_tests.robot,Robot Framework Test Suite,tests\api,12659
+scripts\cleanup.sh,cleanup.sh,Shell Script,scripts,1810
+scripts\run_tests.sh,run_tests.sh,Shell Script,scripts,2704
+scripts\setup_environment.sh,setup_environment.sh,Shell Script,scripts,2192
+requirements.txt,requirements.txt,Text File,Root,455
