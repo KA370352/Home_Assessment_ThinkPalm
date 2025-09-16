@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 from faker import Faker
 from robot.api.deco import keyword
 from robot.api import logger
+from datetime import datetime
 
 class TestDataGenerator:
     """Custom test data generation library using Faker"""
@@ -24,7 +25,7 @@ class TestDataGenerator:
             'address': self.fake.address(),
             'company': self.fake.company(),
             'job_title': self.fake.job(),
-            'date_of_birth': self.fake.date_of_birth(minimum_age=18, maximum_age=80).isoformat(),
+            'date_of_birth': datetime.strptime(self.fake.date_of_birth(minimum_age=18, maximum_age=80),""%Y-%m-%d %H:%M:%S"").isoformat(),
             'username': self.fake.user_name(),
             'password': self.fake.password(length=12),
             'ssn': self.fake.ssn(),
